@@ -8,9 +8,9 @@ services:
     envVars:
       - key: MB_DB_CONNECTION_URI
         fromDatabase:
-          name: elephant
+          name: metabase-postgres
           property: connectionString
 databases:
-  - name: elephant
+  - name: metabase-postgres
     databaseName: metabasedb
     ipAllowList: [] # only allow internal connections
